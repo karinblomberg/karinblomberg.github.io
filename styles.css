@@ -20,11 +20,6 @@ body{
   flex-wrap: wrap;
 }
 
-.ommig{
-  width: 65,5%;
-  height: 300
-}
-
 .stripe{
   border: 4px solid black;
   background: repeating-linear-gradient(
