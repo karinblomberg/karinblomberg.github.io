@@ -1,19 +1,209 @@
+@font-face {
+  font-family: Gridnik;
+  src:url(Gridnik.ttf);
 }
 
+body{
+  background-color: #ffdb00;
 }
 
+.box{
+  border: 4px solid black;
+  width: 32.5%;
+  height: 300px;
 }
 
+.allboxes{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
+.ommig{
+  width: 65,5%;
+  height: 300
 }
 
+.stripe{
+  border: 4px solid black;
+  background: repeating-linear-gradient(
+    45deg,
+    #000000,
+    #000000 4px,
+    #ffdb00 4px,
+    #ffdb00 15px
+  );
 }
 
+.betahaus {
+  background-image: url("images/Betahaus.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
+.wayway{
+  background-image: url("images/mailchimplr.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hansot{
+  background-image: url("http://www.stockholmdesignlab.se/new/wp-content/uploads/hansot-kitchen.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bonnier{
+  background-image: url("http://www.stockholmdesignlab.se/new/wp-content/uploads/bkh_1_2000x1333.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.atob{
+  background-image: url("http://www.stockholmdesignlab.se/new/wp-content/uploads/SDL_A-TO-B_Poster_2.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  height: 300px;
+  width: 15%
+}
+
+.atob2{
+  background-image: url("http://www.stockholmdesignlab.se/new/wp-content/uploads/SDL_A-TO-B_Stationery-Packaging.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color:#ffdb00;
+  background-color: black;
+  border-color:#ffdb00;
+  width: 40%;
+}
+
+.left{
+  border-left: none;
+}
+
+.right{
+  border-right: none;
+}
+
+.container {
+   align-content: flex-start;
+   display: flex;
+   justify-content: center;
+   width: 99%;
+
+ }
+
+.brodtext {
+  display: flex;
+  align-items: flex-end;
+  height: 69%;
+}
+
+.ett{
+  display: flex;
+  align-items: flex-end;
+  height: 64%;
+}
+
+.filler {
+  width: 65.5%;
+}
+
+h1{
+  font-size: 43px;
+  margin-bottom: 10%;
+  font-family: Gridnik;
+  line-height: 1;
+  margin-left: 5px;
 
 }
 
+h2{
+  font-size: 22px;
+  font-family: Gridnik;
+  margin-bottom: 60px;
+  line-height: 1;
+  margin-left: 5px;
+}
 
+h3{
+  font-size: 22px;
+  font-family: Gridnik;
+  line-height: 1;
+}
+
+p{
+  font-size: 16px;
+  font-family: Gridnik;
+  word-spacing: 1;
+  line-height: 1.2em;
+  margin-left: 5px;
+}
+
+@media (min-width: 650px) and (max-width: 1000px) {
+
+  .box{
+    width: 48%;
+    height: 300px;
+  }
+
+  h1{
+    font-size: 35px;
+  }
+
+  .allboxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contact{
+    height: 200px;
+  }
+
+}
+
+@media (max-width: 650px){
+  .allboxes{
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1{
+    font-size: 35px;
+  }
+
+  .box{
+    width: 98%;
+    height: 300px;
+  }
+
+  .contact{
+    height: 100px;
+  }
+
+  .atob{
+    background-size: cover;
+    height: 650px;
+  }
+
+  .filler{
+    display: none;
+  }
 }
